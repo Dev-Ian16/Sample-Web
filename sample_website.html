@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="sample.css">
+
+    <body>
+        <div class="background"></div>
+        <div id="box1"><h1>Hi Love!!
+            <h2><em>Please take care of yourself</em></h2></h1>
+            <img class="gif" src="vis pic/gcat.gif" alt="cat">
+            <button id="bt2">Okayy!!!</button>
+        </div>
+        <div class="popup">
+            <img class="close" src="vis pic/close.jpg" alt="Close">
+            <img class="hicat" src="vis pic/hicat.png" alt="Hicat">
+        
+            <div class="popup-content">
+            <h3> <em></em>Hi you are probably tired right now</em></h3>
+            <h4><em></em>cheer up!!, please take a rest love</em></h4>
+            <h5><em>and don't forget to sleep</em></h5>
+            <h6><em>I've got something to</em></h6>
+            <h7><em>cheer you up</em></h7>
+            <button id="bt3">Letter</button>
+            <button id="bt4">Music</button>
+            <img class="emoji" src="vis pic/flyemoji.png" alt="Emoji">
+            </div>
+        </div>
+        <div class="popup2">
+            <img class="pic1" src="vis pic/pt1.jpeg" alt="Pic1">
+            <img class="pic2" src="vis pic/pt4.jpeg" alt="Pic2">
+            <img class="pic3" src="vis pic/pt3.jpeg" alt="Pic3">
+            <button onmousedown="sound1.play()" id="btn">PLAY</button>
+            <img class="close2" src="vis pic/close.jpg" alt="Close2">
+            <div class="popup3"><em> Hi Love cheer up, just listen to this music and<br>rewind our happy memories together</br>
+            trust me Everything will be fine </em>
+            <img class="wink" src="vis pic/wink.png" alt="Wink">
+            </div>
+        </div>
+        <div class="popup4">
+            <img class="ghug" src="vis pic/ghug-unscreen.gif" alt="Ghug">
+            <img class="close3" src="vis pic/close.jpg" alt="Close3">
+        </div>
+    
+
+
+        </div>
+
+        <script>
+            document.getElementById("bt2").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "flex";
+            })
+            document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            })
+            document.getElementById("btn").addEventListener("click", function(){
+                document.querySelector(".pic1").style.display = "flex";
+            })
+            document.getElementById("btn").addEventListener("click", function(){
+                document.querySelector(".pic2").style.display = "flex";
+            })
+            document.getElementById("btn").addEventListener("click", function(){
+                document.querySelector(".pic3").style.display = "flex";
+            })
+            document.getElementById("bt4").addEventListener("click", function(){
+                document.querySelector(".popup2").style.display = "flex";
+            })
+            document.getElementById("btn").addEventListener("click", function(){
+                document.querySelector(".popup3").style.display = "flex";
+            })
+            document.querySelector(".close2").addEventListener("click", function(){
+                document.querySelector(".popup2").style.display = "none";
+            })
+            document.getElementById("bt3").addEventListener("click", function(){
+                document.querySelector(".popup4").style.display = "flex";
+            })
+            document.querySelector(".close3").addEventListener("click", function(){
+                document.querySelector(".popup4").style.display = "none";
+            })
+            var sound1= new Audio();
+            sound1.src = "vis pic/10CM 'Spring Snow (Lovely Runner OST Part 8)' Easy Lyrics (320).mp3"
+        </script>
+    </body>
+
+
+
+</html>
